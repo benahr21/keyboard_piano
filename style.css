@@ -1,8 +1,12 @@
+@font-face {
+  font-family: mainFont;
+  src: url(HoltwoodOneSC-Regular.ttf);
+}
 html, body {
   height: 100%;
   margin: 0;
   background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
-
+  font-family: sans-serif;
 }
 .fullContainer {
   display: flex;
@@ -18,6 +22,7 @@ html, body {
   width: auto;
   border: 5px solid black;
   overflow: hidden;
+  font-family: 'mainFont';
 }
 .whitenote {
   display: flex;
@@ -42,11 +47,28 @@ html, body {
 }
 
 .blacknote span {
-  color: white;
-  margin-bottom: 5px;
+  color: #ffed4b;
+  margin-bottom: 10px;
 }
 
 .whitenote span {
   align-self: flex-end;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#footer {
+  
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(5, 4, 4, 0.94);
+  justify-content: center;
+}
+
+#footer p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fdcd3b;
+  text-align: center;
+  align-self: center;
 }
