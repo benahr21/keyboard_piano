@@ -33,13 +33,13 @@
 
       function noteUp(elem, isSharp) {
         // when mouse is up of the note back to original color
-        elem.style.background = isSharp ? "#777" : "white";
+        elem.style.background = isSharp ? "black" : "#ffed4b";
       }
       function noteDown(elem, isSharp) {
         // when you press the note
         var note = elem.dataset.note;
         //alert(note);
-        elem.style.background = isSharp ? "black" : "#ccc"; // change the color of pressed note
+        elem.style.background = isSharp ? "#fdcd3b" : "#fdcd3b"; // change the color of pressed note
         synth.triggerAttackRelease(note, "16n"); // making the sound
         event.stopPropagation(); // fot fixing sound issues
       }

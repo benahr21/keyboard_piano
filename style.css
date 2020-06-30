@@ -1,19 +1,20 @@
 html, body {
   height: 100%;
   margin: 0;
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+
 }
 .fullContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
-  
 }
 #container {
   position: relative;
   display: inline-block;
-  height: 200px;
+  height: 300px;
   width: auto;
   border: 5px solid black;
   overflow: hidden;
@@ -21,8 +22,8 @@ html, body {
 .whitenote {
   position: relative;
   height: 100%;
-  width: 50px;
-  background: white;
+  width: 80px;
+  background: #ffed4b;
   float: left;
   border-right: 1px solid black;
 }
@@ -31,6 +32,6 @@ html, body {
   height: 65%;
   width: 55%;
   z-index: 1;
-  background-color: #777;
+  background-color: black;
   left: 68%;
 }
