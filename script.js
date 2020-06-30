@@ -15,15 +15,17 @@
           onmousedown='noteDown(this,false)'
           onmouseup='noteUp(this,false)'
           onmouseleave='noteUp(this,false')
-           data-note='${note + (octave + 4)}'>`;
+           data-note='${note + (octave + 4)}'><span>ff</span>`;
 
           if (hasSharp) {
             html += `<div class='blacknote'
             onmousedown='noteDown(this,true)'
             onmouseup='noteUp(this,true)'
             onmouseleave='noteUp(this,true')   
-            data-note='${note + "#" + (octave + 4)}'></div>`;
+            data-note='${note + "#" + (octave + 4)}'><span>ff</span></div>`;
           }
+
+          
 
           html += "</div>";
         }

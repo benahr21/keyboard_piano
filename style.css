@@ -20,18 +20,33 @@ html, body {
   overflow: hidden;
 }
 .whitenote {
+  display: flex;
   position: relative;
   height: 100%;
   width: 80px;
   background: #ffed4b;
   float: left;
   border-right: 1px solid black;
+  justify-content: center;
 }
 .blacknote {
+  display: flex;
   position: absolute;
   height: 65%;
   width: 55%;
   z-index: 1;
   background-color: black;
   left: 68%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.blacknote span {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.whitenote span {
+  align-self: flex-end;
+  margin-bottom: 5px;
 }
