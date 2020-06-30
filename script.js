@@ -1,5 +1,5 @@
 
-    var synth = new Tone.PolySynth().toMaster(); // Initialize the OSC object
+    let synth = new Tone.PolySynth().toMaster(); // Initialize the OSC object
 
       let keysByOrder = [['Q','2','W','3','E','R','5','T','6','Y','7','U']
                         ,['I','9','O','0','P','V','G','B','H','N','J','M']];
@@ -52,3 +52,29 @@
         synth.triggerAttackRelease(note, "16n"); // making the sound
         event.stopPropagation(); // fot fixing sound issues
       }
+
+      let normal = document.getElementById("normalStatus");
+      let sp1 = document.getElementById("sp1Status");
+      let sp2 = document.getElementById("sp2Status");
+
+      normal.addEventListener('click', () => {
+        console.log("click normal");
+        normal.style.backgroundColor = "#fdcd3b";
+        sp1.style.backgroundColor = "#ffed4b";
+        sp2.style.backgroundColor = "#ffed4b";
+        synth = new Tone.PolySynth().toMaster();
+      })
+      sp1.addEventListener('click', () => {
+        console.log("click sp1");
+        normal.style.backgroundColor = "#ffed4b";
+        sp1.style.backgroundColor = "#fdcd3b";
+        sp2.style.backgroundColor = "#ffed4b";
+        synth = new Tone.DuoSynth().toMaster();
+      })
+      sp2.addEventListener('click', () => {
+        console.log("click sp2");
+        normal.style.backgroundColor = "#ffed4b";
+        sp1.style.backgroundColor = "#ffed4b";
+        sp2.style.backgroundColor = "#fdcd3b";
+        synth = new Tone.MembraneSynth().toMaster();
+      })

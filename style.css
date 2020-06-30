@@ -15,6 +15,39 @@ html, body {
   align-items: center;
   height: 100%;
 }
+
+.statusBar {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 800px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+.statusBar div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #ffed4b;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.statusBar div span {
+  font-family: "mainFont";
+  font-size: 22px;
+}
+
+/*#normalStatus {
+  background-color: #fdcd3b;
+}*/
+
 #container {
   position: relative;
   display: inline-block;
