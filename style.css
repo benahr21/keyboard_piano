@@ -8,6 +8,12 @@ html, body {
   background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
   font-family: sans-serif;
 }
+#tonelogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 70px;
+}
 .fullContainer {
   display: flex;
   flex-direction: column;
