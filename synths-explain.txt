@@ -1,0 +1,31 @@
+DuoSynth 
+סינתיס מונופוני שמורכב משני מונו הפועלים במקביל לשליטה ביחס התדר בין הקולות לאפקט הוויברטו
+המעטפת:
+envelope : {
+attack : 0.01 ,
+decay : 0 ,
+sustain : 1 ,
+release : 0.5
+}
+
+
+PoloSynth
+הצליל הפשוט והדיפולטיבי של הקלידים
+המעטפת:
+envelope : {
+attack : 0.005 ,
+decay : 0.1 ,
+sustain : 0.3 ,
+release : 1
+}
+
+MembraneStynth
+משמיע צלילי "קיק"  באמצעות אוסילטור יחיד, עם מעטפת משרעת ורמפת תדרים
+המעטפת:
+envelope : {
+attack : 0.001 ,
+decay : 0.4 ,
+sustain : 0.01 ,
+release : 1.4 ,
+attackCurve : exponential
+}
