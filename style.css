@@ -19,6 +19,12 @@ body {
   left: 10px;
   height: 70px;
 }
+.tonelogomodal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+}
 .fullContainer {
   display: flex;
   flex-direction: column;
@@ -42,6 +48,7 @@ body {
   color: black;
 }
 .modal-content {
+  position: relative;
   background-color: rgba(250, 211, 84, 0.9); /* Black w/ opacity */
   margin: auto;
   padding: 20px;
