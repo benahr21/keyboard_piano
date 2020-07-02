@@ -17,11 +17,64 @@
         <div id="sp1Status"><span>DuoSynth</span></div>
         <div id="sp2Status"><span>MembraneSynth</span></div>
       </div>
+      <div class="explainStatus">
+        Choose which synth you like - when you press you will see some
+        explanation
+      </div>
+      <!--All the modals for the modes from here-->
+
+      <!--first Modal for normalStatus-->
+      <div id="normalModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>PoloSynth</h1>
+          <p>
+            The default sound, like a "real" Keyboard
+          </p>
+          <p>
+            Envelope: attack: 0.005, decay: 0.1, sustain: 0.3, release: 1 .
+          </p>
+        </div>
+      </div>
+      <!--second Modal for DduoSynth-->
+      <div id="sp1Modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>DuoSynth</h1>
+          <p>
+            Tone.DuoSynth is a monophonic synth composed of two MonoSynths run
+            in parallel with control over the frequency ratio between the two
+            voices and vibrato effect
+          </p>
+          <p>
+            Envelope: attack: 0.01, decay: 0.0, sustain: 1, release: 0.5 .
+          </p>
+        </div>
+      </div>
+
+      <!--second Modal for membraneSynth-->
+      <div id="sp2Modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>MembraneSynth</h1>
+          <p>
+            MembraneSynth makes kick and tom sounds using a single oscillator
+            with an amplitude envelope and frequency ramp
+          </p>
+          <p>
+            Envelope: attack: 0.001, decay: 0.4, sustain: 0.01, release: 1.4 .
+          </p>
+        </div>
+      </div>
+
       <div>
         <div id="container"></div>
       </div>
       <div id="footer">
-        <p>כל הזכויות שמורות ליובל עטיה, בנימין אור, ספיר צלח, חן מור וסקאזי</p>
+        <p>
+          &copy; כל הזכויות שמורות ליובל עטיה, בנימין אור, ספיר צלח, חן מור
+          וסקאזי
+        </p>
       </div>
     </div>
 
