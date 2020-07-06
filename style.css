@@ -85,11 +85,13 @@ body {
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
+  cursor: pointer;
 }
 .explainStatus {
   padding: 20px;
   font-family: "Other";
   font-size: 28px;
+  text-transform: uppercase;
 }
 .statusBar div {
   display: flex;
@@ -106,7 +108,7 @@ body {
 }
 
 #normalStatus {
-  background-color: #fdcd3b;
+  background-color: #c7a541;
 }
 
 #container {

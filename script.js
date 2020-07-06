@@ -68,7 +68,7 @@ let close2 = document.getElementsByClassName("close")[2];
 
 normal.addEventListener("click", () => {
   console.log("click normal");
-  normal.style.backgroundColor = "#fdcd3b";
+  normal.style.backgroundColor = "#c7a541";
   sp1.style.backgroundColor = "#ffed4b";
   sp2.style.backgroundColor = "#ffed4b";
   synth = new Tone.PolySynth().toMaster();
@@ -77,7 +77,7 @@ normal.addEventListener("click", () => {
 sp1.addEventListener("click", () => {
   console.log("click sp1");
   normal.style.backgroundColor = "#ffed4b";
-  sp1.style.backgroundColor = "#fdcd3b";
+  sp1.style.backgroundColor = "#c7a541";
   sp2.style.backgroundColor = "#ffed4b";
   synth = new Tone.DuoSynth().toMaster();
   modal1.style.display = "block";
@@ -86,7 +86,7 @@ sp2.addEventListener("click", () => {
   console.log("click sp2");
   normal.style.backgroundColor = "#ffed4b";
   sp1.style.backgroundColor = "#ffed4b";
-  sp2.style.backgroundColor = "#fdcd3b";
+  sp2.style.backgroundColor = "#c7a541";
   synth = new Tone.MembraneSynth().toMaster();
   modal2.style.display = "block";
 });
