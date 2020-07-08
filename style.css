@@ -88,9 +88,9 @@ body {
   cursor: pointer;
 }
 .explainStatus {
-  padding: 20px;
+  padding: 12px;
   font-family: "Other";
-  font-size: 28px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 .statusBar div {
@@ -162,7 +162,7 @@ body {
 
 #footer p {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 23px;
   color: #fdcd3b;
   text-align: center;
   align-self: center;
