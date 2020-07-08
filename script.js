@@ -51,7 +51,7 @@ function noteDown(elem, isSharp) {
   // when you press the note
   var note = elem.dataset.note;
   //alert(note);
-  elem.style.background = isSharp ? "#fdcd3b" : "#fdcd3b"; // change the color of pressed note
+  elem.style.background = isSharp ? "rgba(130, 120, 33, 0.96)" : "#fdcd3b"; // change the color of pressed note
   synth.triggerAttackRelease(note, "16n"); // making the sound
   event.stopPropagation(); // fot fixing sound issues
 }
